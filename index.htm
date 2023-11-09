@@ -9,12 +9,11 @@
 <!-- Add the slick-theme.css if you want default styling -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Slick Carousel Demo</title>
-
 <style>
     .slick-next:before, .slick-prev:before {
         font-size: 50px;
         color: black;
-        z-index: 9999;
+        /* z-index: 9999; */
     }
     .slick-next, .slick-prev {
         z-index: 9999;
@@ -28,7 +27,9 @@
 <div style="height: 25vh;"></div>
 
     <div class="center">
-        <div class="o-layout__item u-width-12 u-width-6--s u-width-4--m u-width-3--l u-width-2--w x-product-list__item">
+      <!-- <div class="slick-prev" aria-label="Previous" type="button">Previous</div> -->
+
+        <div style="display: flex;" class="o-layout__item u-width-12 u-width-6--s u-width-4--m u-width-3--l u-width-2--w x-product-list__item">
             <div class="x-product-list__image-box">
             <img class="x-product-list__image" src="https://www.weistec.com/mm5/graphics/00000001/t/i/tit_v2_4.jpg" alt="Trunk Ice Tank V2">
             </div>
@@ -45,7 +46,7 @@
             </div>
             </div>
             
-            <div class="o-layout__item u-width-12 u-width-6--s u-width-4--m u-width-3--l u-width-2--w x-product-list__item">
+            <div style="display: flex;" class="o-layout__item u-width-12 u-width-6--s u-width-4--m u-width-3--l u-width-2--w x-product-list__item">
             <div class="x-product-list__image-box">
             <img class="x-product-list__image" src="https://www.weistec.com/mm5/graphics/00000001/r/o/rowairbox1.jpg" alt="M156 ROW Airbox Set">
             </div>
@@ -62,7 +63,7 @@
             </div>
             </div>
             
-            <div class="o-layout__item u-width-12 u-width-6--s u-width-4--m u-width-3--l u-width-2--w x-product-list__item">
+            <div style="display: flex;" class="o-layout__item u-width-12 u-width-6--s u-width-4--m u-width-3--l u-width-2--w x-product-list__item">
             <div class="x-product-list__image-box">
             <img class="x-product-list__image" src="https://www.weistec.com/mm5/graphics/00000001/m/1/m156panel5.jpg" alt="High Flow Air Filter Set, M156">
             </div>
@@ -79,7 +80,7 @@
             </div>
             </div>
             
-            <div class="o-layout__item u-width-12 u-width-6--s u-width-4--m u-width-3--l u-width-2--w x-product-list__item">
+            <div style="display: flex;" class="o-layout__item u-width-12 u-width-6--s u-width-4--m u-width-3--l u-width-2--w x-product-list__item">
             <div class="x-product-list__image-box">
             <img class="x-product-list__image" src="https://www.weistec.com/mm5/graphics/00000001/m/1/m177_air_filter_13.jpg" alt="High Flow Air Filter Set, M177">
             </div>
@@ -96,7 +97,7 @@
             </div>
             </div>
             
-            <div class="o-layout__item u-width-12 u-width-6--s u-width-4--m u-width-3--l u-width-2--w x-product-list__item">
+            <div style="display: flex;" class="o-layout__item u-width-12 u-width-6--s u-width-4--m u-width-3--l u-width-2--w x-product-list__item">
             <div class="x-product-list__image-box">
             <img class="x-product-list__image" src="https://www.weistec.com/mm5/graphics/00000001/m/1/m156_billet_oil_5.jpg" alt="Billet Oil Filter Cap, M156 M159">
             </div>
@@ -112,7 +113,7 @@
             <input type="hidden" name="Product[5]:code" value="Billet_Oil_Filter_Cap_M156_M159">
             </div>
             </div>
-            <div class="o-layout__item u-width-12 u-width-6--s u-width-4--m u-width-3--l u-width-2--w x-product-list__item">
+            <div style="display: flex;" class="o-layout__item u-width-12 u-width-6--s u-width-4--m u-width-3--l u-width-2--w x-product-list__item">
                 <div class="x-product-list__image-box">
                 <img class="x-product-list__image" src="https://www.weistec.com/mm5/graphics/00000001/m/1/m157_sp_1_1.jpg" alt="Spark Plugs, M177 / M177 LS2 / M176 / M178">
                 </div>
@@ -129,7 +130,7 @@
                 </div>
                 </div>
                 
-                <div class="o-layout__item u-width-12 u-width-6--s u-width-4--m u-width-3--l u-width-2--w x-product-list__item">
+                <div style="display: flex;" class="o-layout__item u-width-12 u-width-6--s u-width-4--m u-width-3--l u-width-2--w x-product-list__item">
                 <div class="x-product-list__image-box">
                 <img class="x-product-list__image" src="https://www.weistec.com/mm5/graphics/00000001/2/Mounting brackets DCE_2.jpg" alt="Accessory Port Adapter for Rivian">
                 </div>
@@ -146,7 +147,7 @@
                 </div>
                 </div>
                 
-                <div class="o-layout__item u-width-12 u-width-6--s u-width-4--m u-width-3--l u-width-2--w x-product-list__item">
+                <div style="display: flex;" class="o-layout__item u-width-12 u-width-6--s u-width-4--m u-width-3--l u-width-2--w x-product-list__item">
                 <div class="x-product-list__image-box">
                 <img class="x-product-list__image" src="https://www.weistec.com/mm5/graphics/00000001/2/Ditch lights_6.jpg" alt="Ditch Light Bracket, R1T R1S">
                 </div>
@@ -162,7 +163,7 @@
                 <input type="hidden" name="Product[8]:code" value="01-111-02436-9">
                 </div>
                 </div>
-        
+                <!-- <div class="slick-next" aria-label="Next" type="button">Next</div> -->
     </div>
 
 </div>
@@ -171,43 +172,8 @@
 
     
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
-      <script type="text/javascript">
-        $('.center').slick({
-            // don't forget to check breakpoints from roundabout 
-  dots: true,
-  infinite: true,
-  speed: 300,
-  slidesToShow: 5,
-  slidesToScroll: 5,
-//   button might not work with upsell page. try to find a workaround
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        infinite: true,
-        dots: true
-      }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
-  ]
-});
-      </script>
+      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <script src="./slick.js"></script>
+    <script src="./main.js"></script>
 </body>
 </html>
