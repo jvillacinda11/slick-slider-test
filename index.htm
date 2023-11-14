@@ -8,26 +8,30 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <!-- Add the slick-theme.css if you want default styling -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <title>Slick Carousel Demo</title>
 <style>
     .slick-next:before, .slick-prev:before {
         font-size: 50px;
         color: black;
-        /* z-index: 9999; */
     }
     .slick-next, .slick-prev {
         z-index: 9999;
+    }
+    .container{
+        width: 75vw;
+        margin: auto;
+        padding: 1vw;
     }
 </style>
 </head>
 <body>
 
 
-<div style="width: 80vw; margin: auto; padding: 100px;">
+<div class="container">
 <div style="height: 25vh;"></div>
 
     <div class="center">
-      <!-- <div class="slick-prev" aria-label="Previous" type="button">Previous</div> -->
 
         <div style="display: flex;" class="o-layout__item u-width-12 u-width-6--s u-width-4--m u-width-3--l u-width-2--w x-product-list__item">
             <div class="x-product-list__image-box">
@@ -38,8 +42,8 @@
             <span class="x-product-list__price">$999.00</span>
             </div>
             <div data-label="">
-            <label class="c-form-checkbox" style="padding: 15px">
-            <input class="c-form-checkbox__input" type="checkbox" name="Upsell_Selected[1]" value="Yes">
+            <label class="c-form-checkbox" style="padding: 20px">
+            <input class="c-form-checkbox__input" type="checkbox" name="Upsell_Selected[1]" value="Yes" data-item-name="Trunk Ice Tank V2">
             <span class="c-form-checkbox__caption">Buy</span>
             </label>
             <input type="hidden" name="Product[1]:code" value="01-000-00114-7">
@@ -55,8 +59,8 @@
             <span class="x-product-list__price">$549.00</span>
             </div>
             <div data-label="">
-            <label class="c-form-checkbox" style="padding: 15px">
-            <input class="c-form-checkbox__input" type="checkbox" name="Upsell_Selected[2]" value="Yes">
+            <label class="c-form-checkbox" style="padding: 20px">
+            <input class="c-form-checkbox__input" type="checkbox" name="Upsell_Selected[2]" value="Yes" data-item-name="M156 ROW Airbox Set">
             <span class="c-form-checkbox__caption">Buy</span>
             </label>
             <input type="hidden" name="Product[2]:code" value="01-156-00743-7">
@@ -72,8 +76,8 @@
             <span class="x-product-list__price">$199.00</span>
             </div>
             <div data-label="">
-            <label class="c-form-checkbox" style="padding: 15px">
-            <input class="c-form-checkbox__input" type="checkbox" name="Upsell_Selected[3]" value="Yes">
+            <label class="c-form-checkbox" style="padding: 20px">
+            <input class="c-form-checkbox__input" type="checkbox" name="Upsell_Selected[3]" value="Yes" data-item-name="High Flow Air Filter, M156">
             <span class="c-form-checkbox__caption">Buy</span>
             </label>
             <input type="hidden" name="Product[3]:code" value="01-156-01038-5">
@@ -82,15 +86,15 @@
             
             <div style="display: flex;" class="o-layout__item u-width-12 u-width-6--s u-width-4--m u-width-3--l u-width-2--w x-product-list__item">
             <div class="x-product-list__image-box">
-            <img class="x-product-list__image" src="https://www.weistec.com/mm5/graphics/00000001/m/1/m177_air_filter_13.jpg" alt="High Flow Air Filter Set, M177">
+            <img class="x-product-list__image" src="https://www.weistec.com/mm5/graphics/00000001/m/1/m177_air_filter_13.jpg" alt="High Flow Air Filter Set, M156">
             </div>
             <strong class="x-product-list__name">High Flow Air Filter Set, M177</strong>
             <div class="x-product-list__price-box">
             <span class="x-product-list__price">$239.00</span>
             </div>
             <div data-label="">
-            <label class="c-form-checkbox" style="padding: 15px">
-            <input class="c-form-checkbox__input" type="checkbox" name="Upsell_Selected[4]" value="Yes">
+            <label class="c-form-checkbox" style="padding: 20px">
+            <input class="c-form-checkbox__input" type="checkbox" name="Upsell_Selected[4]" value="Yes" data-item-name="High Flow Air Filter Set, M177">
             <span class="c-form-checkbox__caption">Buy</span>
             </label>
             <input type="hidden" name="Product[4]:code" value="01-177-01370-7">
@@ -106,8 +110,8 @@
             <span class="x-product-list__price">$179.00</span>
             </div>
             <div data-label="">
-            <label class="c-form-checkbox" style="padding: 15px">
-            <input class="c-form-checkbox__input" type="checkbox" name="Upsell_Selected[5]" value="Yes">
+            <label class="c-form-checkbox" style="padding: 20px">
+            <input class="c-form-checkbox__input" type="checkbox" name="Upsell_Selected[5]" value="Yes" data-item-name="Billet Oil Filter Cap, M156 M159">
             <span class="c-form-checkbox__caption">Buy</span>
             </label>
             <input type="hidden" name="Product[5]:code" value="Billet_Oil_Filter_Cap_M156_M159">
@@ -122,8 +126,8 @@
                 <span class="x-product-list__price">$199.00</span>
                 </div>
                 <div data-label="">
-                <label class="c-form-checkbox" style="padding: 15px">
-                <input class="c-form-checkbox__input" type="checkbox" name="Upsell_Selected[6]" value="Yes">
+                <label class="c-form-checkbox" style="padding: 20px">
+                <input class="c-form-checkbox__input" type="checkbox" name="Upsell_Selected[6]" value="Yes" data-item-name="Spark Plug, M177 / M177 LS2 / M178">
                 <span class="c-form-checkbox__caption">Buy</span>
                 </label>
                 <input type="hidden" name="Product[6]:code" value="spark_plugs_m177">
@@ -139,8 +143,8 @@
                 <span class="x-product-list__price">$100.00</span>
                 </div>
                 <div data-label="">
-                <label class="c-form-checkbox" style="padding: 15px">
-                <input class="c-form-checkbox__input" type="checkbox" name="Upsell_Selected[7]" value="Yes">
+                <label class="c-form-checkbox" style="padding: 20px">
+                <input class="c-form-checkbox__input" type="checkbox" name="Upsell_Selected[7]" value="Yes" data-item-name="Accessory Port Adapter for Rivian">
                 <span class="c-form-checkbox__caption">Buy</span>
                 </label>
                 <input type="hidden" name="Product[7]:code" value="09-111-00078-7">
@@ -156,23 +160,26 @@
                 <span class="x-product-list__price">$149.00</span>
                 </div>
                 <div data-label="">
-                <label class="c-form-checkbox" style="padding: 15px">
-                <input class="c-form-checkbox__input" type="checkbox" name="Upsell_Selected[8]" value="Yes">
+                <label class="c-form-checkbox" style="padding: 20px">
+                <input class="c-form-checkbox__input" type="checkbox" name="Upsell_Selected[8]" value="Yes" data-item-name="Ditch Light Bracket, R1T R1S">
                 <span class="c-form-checkbox__caption">Buy</span>
                 </label>
                 <input type="hidden" name="Product[8]:code" value="01-111-02436-9">
                 </div>
                 </div>
-                <!-- <div class="slick-next" aria-label="Next" type="button">Next</div> -->
     </div>
 
 </div>
+
+<p style="text-align: center;">
+    <div class="c-button c-button--l u-bg-red" style="color: white; font-weight: bold; text-transform: uppercase;   -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;" name="test">Console log selected items</div>
+</p>
 
 <a href="./current-upsell.htm">current (sortof) </a>
 
     
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
     <script src="./slick.js"></script>
     <script src="./main.js"></script>
 </body>

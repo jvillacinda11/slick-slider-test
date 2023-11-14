@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selected Options</title>
+</head>
+<body>
+
+  <div data-label="">
+    <label class="c-form-checkbox" style="padding: 15px">
+      <input class="c-form-checkbox__input" type="checkbox" name="Upsell_Selected[3]" value="Yes">
+      <span class="c-form-checkbox__caption">Buy</span>
+    </label>
+    <input type="hidden" name="Product[3]:code" value="01-004-02493-3">
+  </div>
+
+  <script>
+    // Get all checkboxes with a specific name attribute
+    const checkboxes = document.querySelectorAll('input[name^="Upsell_Selected["]');
+
+    // Initialize an array to store selected options
+    const selectedOptions = [];
+
+    // Add an event listener to each checkbox
+    checkboxes.forEach(checkbox => {
+      checkbox.addEventListener('change', function() {
+        if (this.checked) {
+          // If checkbox is checked, add its value to the array
+          selectedOptions.push(this.value);
+        } else {
+          // If checkbox is unchecked, remove its value from the array
+          const index = selectedOptions.indexOf(this.value);
+          if (index !== -1) {
+            selectedOptions.splice(index, 1);
+          }
+        }
+
+        // Log the current array of selected options
+        console.log(selectedOptions);
+      });
+    });
+  </script>
+
+</body>
+</html>
