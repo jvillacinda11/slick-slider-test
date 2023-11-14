@@ -51,7 +51,6 @@ document.addEventListener('click', function (event) {
     //loop to check?
   checkboxes.forEach( checkbox =>{
     if(checkbox.checked){
-      console.log("ping")
       upsolditems.push({
         itemName: checkbox.getAttribute('data-item-name')
       })
